@@ -1,0 +1,25 @@
+.addbook-input{
+    
+}
+.addbook-row{
+   
+   display: flex;
+   flex-direction: column;
+   padding:0.5rem;
+   box-sizing: border-box;
+}
+
+.addbook-input{
+    height: 1.5rem;
+}
+.addbook-submit-row{
+    display: flex;
+   flex-direction: column;
+   padding:0.5rem;
+   box-sizing: border-box;
+}
+.addbook-submit{
+    height: 2rem;
+    background-color: #3B3F50;
+    color:white;
+}

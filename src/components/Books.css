@@ -1,0 +1,20 @@
+.book-table{
+    width: 100%;
+    border:1px solid black;
+    border-collapse: collapse;
+    
+}
+tr,td{
+    border: 1px solid black;
+}
+tbody>tr:nth-child(even){
+    
+background-color: lightgrey;
+
+}
+tbody>tr:nth-child(odd){
+    background-color:white;
+}
+.book-head-row{
+    background-color: #01987A;
+}
