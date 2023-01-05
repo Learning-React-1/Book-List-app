@@ -1,0 +1,16 @@
+.custom-search{
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+    
+}
+.custom-search-input{
+width: 90%;
+height: 1.5rem;
+}
+.custom-search-button{
+padding:0.4rem;
+background-color: wheat;
+}

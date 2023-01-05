@@ -1,5 +1,6 @@
 .book-row:hover{
-    background-color: aqua;
+    color:white;
+    background-color: black;
 }
 .delete-button:hover{
 background-color: red;
