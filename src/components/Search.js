@@ -8,7 +8,7 @@ function Search({showsearchresults}){
     }
     useEffect(()=>{
         showsearchresults(searchterm)
-    },[searchterm,showsearchresults])
+    },[searchterm])
     return(
         <div className='custom-search'>
             <input type="text" className='custom-search-input' placeholder='search book names' value={searchterm} onChange={(e)=>{setSearchTerm(e.target.value);searchhandler()}}></input>

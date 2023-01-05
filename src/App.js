@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Books from './components/Books'
 import Addbook from './components/Addbook'
 import Search from './components/Search';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 function App() {
   const [books,setBooks]=useState([]);
   const [searchresults,setSearchResults]=useState([]);//for search
@@ -56,8 +56,8 @@ function App() {
       setShowSearch(true)
     }
   },[searchterm])
-  const showsearchresults=(currsearchterm)=>{
-    console.log(currsearchterm)
+  const showsearchresults=useCallback((currsearchterm)=>{
+    
     setSearchTerm(currsearchterm)
     setSearchResults((prevsearch)=>{
       const updatedsearch=books.map((book)=>{
@@ -69,7 +69,7 @@ function App() {
       return updatedsearch;
     })
     
-  }
+  },[books])
   /*************************************handling search************************************************************ */
   return (
     <div className="App">
