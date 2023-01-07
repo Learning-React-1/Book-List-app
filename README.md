@@ -5,6 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+
+to install all the node_modules
+
+## `npm run server`
+
+to start fake backend that provies data
 
 ### `npm start`
 
